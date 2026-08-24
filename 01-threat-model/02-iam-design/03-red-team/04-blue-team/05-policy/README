@@ -1,0 +1,45 @@
+# Project 2 — IAM Design
+
+## Overview
+This project defines a secure Identity and Access Management (IAM) architecture for AI agents and services.
+
+## IAM Architecture
+The design follows least privilege, separation of duties, strong authentication, and controlled access.
+
+## Identity Lifecycle
+- Provision unique identities for each AI agent.
+- Assign only required permissions.
+- Review access regularly.
+- Rotate credentials periodically.
+- Immediately revoke compromised or unused identities.
+- Decommission identities when agents are retired.
+
+## Authentication
+- Use strong authentication mechanisms.
+- Avoid shared credentials.
+- Use short-lived tokens wherever possible.
+- Protect API keys and secrets using secure secret management.
+
+## Authorization
+- Apply role-based access control.
+- Follow the principle of least privilege.
+- Restrict agents to only the resources required for their tasks.
+- Separate administrative and operational permissions.
+
+## Credential Governance
+- Rotate API keys and secrets regularly.
+- Do not store credentials in source code.
+- Monitor credential usage.
+- Revoke exposed or compromised credentials immediately.
+
+## Security Controls
+- Least privilege access
+- Unique agent identities
+- Credential rotation
+- Access reviews
+- Secret management
+- Audit logging
+- Immediate revocation
+
+## Conclusion
+The IAM design provides controlled, auditable, and secure access for AI agents while reducing the risk of credential misuse and unauthorized access.
